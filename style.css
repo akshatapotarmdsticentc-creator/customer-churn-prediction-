@@ -1,14 +1,77 @@
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
+
+    /* 🔥 Gradient Background */
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
 }
 
+/* ✨ Card style */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+
+    /* 🔥 Animation */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ✨ Inputs */
 input {
     margin: 10px;
-    padding: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+    /* smooth effect */
+    transition: 0.3s;
 }
 
+/* 🔥 Input hover animation */
+input:hover {
+    transform: scale(1.05);
+}
+
+/* ✨ Button */
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #ff7a18;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+/* 🔥 Button hover animation */
+button:hover {
+    background: #ffb347;
+    transform: scale(1.1);
+}
+
+/* ✨ Result text */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 🔥 Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
